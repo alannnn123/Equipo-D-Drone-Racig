@@ -1,11 +1,13 @@
 # Proyecto: Dron Estable V2
-**Equipo:** 
+**Equipo:** <div align="center">
 DIEGO BETANCOURT MENDEZ <br>
 LUCANO ESTRADA MANUEL ALEJANDRO <br>
 ALAN BLADIMIR ALMARAZ CORTES <br>
 CRISTIAN YERAM GONZALEZ MIRANDA <br>
-**FALCONS**
-![EQUPO D](LOGO.jpeg)
+**FALCONS**<br>
+
+<img src="LOGO.jpeg" width="300">
+</div>
 
 ## Datos del Dron
 El presente proyecto utiliza una arquitectura de hardware personalizada, montada sobre el chasis de un dron comercial, integrando microcontroladores modernos y sensores de estabilización para el control de vuelo mediante Wi-Fi.
