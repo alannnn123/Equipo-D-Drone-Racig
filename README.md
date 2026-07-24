@@ -14,22 +14,29 @@ El presente proyecto utiliza una arquitectura de hardware personalizada, montada
 
 **Estructura y Propulsión** (Hardware Base)<br>
 *Chasis y Brazos:* Estructura plástica ultraligera recuperada de un dron de juguete comercial.
+<div align="center">
+<img src="BRAZOS.png" width="100"> </div>
 
 *Motores (4x):* Motores de corriente continua sin núcleo (Coreless DC Motors). Operan a altas revoluciones y bajo torque, configurados de manera cruzada (dos girando en sentido horario CW y dos en sentido antihorario CCW) para cancelar el momento angular.
-
+<div align="center">
+<img src="MOTORES.png" width="100"> </div>
 *Hélices:* De paso fijo, optimizadas para los motores coreless de juguete.
+<div align="center">
+<img src="HELICES.png" width="100"> </div>
 
 **Unidad de Control** <br>
 Microcontrolador: ESP Mini (basado en la arquitectura ESP32/ESP8266).
-
 *Procesamiento:* Frecuencia de reloj de alto rendimiento (hasta 240 MHz), lo cual permite ejecutar el bucle de estabilización y el servidor web simultáneamente.
+<div align="center">
+<img src="ESP.png" width="100"> </div>
 
 *Telemetría y Control:* Utiliza el módulo Wi-Fi integrado a 2.4 GHz configurado como Punto de Acceso (SoftAP) para enviar y recibir comandos de vuelo y telemetría en tiempo real sin necesidad de un router externo.
 
 **Sistema de Estabilización** (Sensores)
-Sensor Inercial (IMU): Módulo MPU6050.
-
+Sensor Inercial (IMU): Módulo MPU6050.<br>
 *Grados de Libertad:* Integra un giroscopio de 3 ejes y un acelerómetro de 3 ejes en el mismo chip.
+<div align="center">
+<img src="SENSOR.png" width="100"> </div>
 
 *Comunicación:* Se comunica con el microcontrolador mediante el protocolo I2C, entregando datos precisos sobre la inclinación (Pitch y Roll) para la retroalimentación del sistema de control.
 
